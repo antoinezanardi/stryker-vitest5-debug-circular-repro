@@ -1,0 +1,148 @@
+11:08:53 (73175) DEBUG ConfigReader Loading config from stryker.config.mjs
+11:08:53 (73175) DEBUG ConfigReader Loaded config: {
+  "testRunner": "vitest",
+  "plugins": [
+    "@stryker-mutator/vitest-runner"
+  ],
+  "mutate": [
+    "src/**/*.js",
+    "!src/**/*.test.js"
+  ],
+  "vitest": {
+    "configFile": "vitest.config.mjs"
+  },
+  "reporters": [
+    "clear-text"
+  ],
+  "coverageAnalysis": "off",
+  "dryRunOnly": true,
+  "logLevel": "debug",
+  "fileLogLevel": "trace",
+  "allowConsoleColors": true,
+  "checkers": [],
+  "checkerNodeArgs": [],
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "allowEmojis": false,
+    "logTests": true,
+    "maxTestsToLog": 3,
+    "reportTests": true,
+    "reportMutants": true,
+    "reportScoreTable": true,
+    "skipFull": false
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "ignorePatterns": [],
+  "ignoreStatic": false,
+  "incremental": false,
+  "incrementalFile": "reports/stryker-incremental.json",
+  "force": false,
+  "inPlace": false,
+  "maxConcurrentTestRunners": 9007199254740991,
+  "maxTestRunnerReuse": 0,
+  "mutator": {
+    "plugins": null,
+    "excludedMutations": []
+  },
+  "appendPlugins": [],
+  "htmlReporter": {
+    "fileName": "reports/mutation/mutation.html"
+  },
+  "jsonReporter": {
+    "fileName": "reports/mutation/mutation.json"
+  },
+  "disableTypeChecks": true,
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "cleanTempDir": true,
+  "testRunnerNodeArgs": [],
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "dryRunTimeoutMinutes": 5,
+  "tsconfigFile": "tsconfig.json",
+  "warnings": true,
+  "disableBail": false,
+  "allowEmpty": false,
+  "ignorers": [],
+  "testFiles": []
+}
+11:08:53 (73175) DEBUG PluginLoader Loading plugin @stryker-mutator/vitest-runner
+11:08:53 (73175) DEBUG PluginLoader Loading plugin file:///private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/node_modules/.pnpm/@stryker-mutator+instrumenter@10.1.1/node_modules/@stryker-mutator/instrumenter/dist/src/frameworks/index.js
+11:08:53 (73175) DEBUG PluginLoader Loading plugin file:///private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/node_modules/.pnpm/@stryker-mutator+core@10.1.1/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+11:08:53 (73175) DEBUG MetaSchemaBuilder Contributing 1 schemas from plugins to options validation.
+11:08:53 (73175) INFO ProjectReader Found 1 of 9 file(s) to be mutated.
+11:08:53 (73175) DEBUG ProjectReader All input files: [
+  "/private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/.gitignore",
+  "/private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/README.md",
+  "/private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/package.json",
+  "/private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/pnpm-lock.yaml",
+  "/private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/pnpm-workspace.yaml",
+  "/private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/src/sum.js",
+  "/private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/src/sum.test.js",
+  "/private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/stryker.config.mjs",
+  "/private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/vitest.config.mjs"
+]
+11:08:53 (73175) DEBUG ProjectReader Files to mutate: [
+  "/private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/src/sum.js"
+]
+11:08:53 (73175) DEBUG TemporaryDirectory Using temp directory "/private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/.stryker-tmp/sandbox-HPhIl9"
+11:08:54 (73175) DEBUG Instrumenter Instrumenting 1 source files with mutants
+11:08:54 (73175) DEBUG Instrumenter Instrumented src/sum.js (2 mutant(s))
+11:08:54 (73175) INFO Instrumenter Instrumented 1 source file(s) with 2 mutant(s)
+11:08:54 (73175) INFO ConcurrencyTokenProvider Creating 7 test runner process(es).
+11:08:54 (73175) DEBUG ChildProcessProxy Started CheckerWorker in worker process 0 with pid 73210 
+11:08:54 (73210) DEBUG PluginLoader Loading plugin @stryker-mutator/vitest-runner
+11:08:55 (73210) DEBUG PluginLoader Loading plugin file:///private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/node_modules/.pnpm/@stryker-mutator+instrumenter@10.1.1/node_modules/@stryker-mutator/instrumenter/dist/src/frameworks/index.js
+11:08:55 (73210) DEBUG PluginLoader Loading plugin file:///private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/node_modules/.pnpm/@stryker-mutator+core@10.1.1/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+11:08:55 (73175) DEBUG Sandbox Creating a sandbox for files in /private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/.stryker-tmp/sandbox-HPhIl9
+11:08:55 (73175) DEBUG Sandbox Start symlink node_modules
+11:08:55 (73175) DEBUG Sandbox Create symlink from /private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/node_modules to /private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/.stryker-tmp/sandbox-HPhIl9/node_modules
+11:08:55 (73175) DEBUG BroadcastReporter Broadcasting to reporters ["clear-text"]
+11:08:55 (73175) DEBUG ChildProcessProxy Started ChildProcessTestRunnerWorker in worker process 0 with pid 73212 
+11:08:55 (73212) DEBUG PluginLoader Loading plugin @stryker-mutator/vitest-runner
+11:08:55 (73212) DEBUG PluginLoader Loading plugin file:///private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/node_modules/.pnpm/@stryker-mutator+instrumenter@10.1.1/node_modules/@stryker-mutator/instrumenter/dist/src/frameworks/index.js
+11:08:55 (73212) DEBUG PluginLoader Loading plugin file:///private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/node_modules/.pnpm/@stryker-mutator+core@10.1.1/node_modules/@stryker-mutator/core/dist/src/reporters/index.js
+11:08:55 (73212) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/.stryker-tmp/sandbox-HPhIl9
+11:08:55 (73175) DEBUG Stryker Not removing the temp dir because an error occurred
+11:08:55 (73175) ERROR Stryker Unexpected error occurred while running Stryker StrykerError: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Object'
+    |     property 'resolvedProjects' -> object with constructor 'Array'
+    |     index 0 -> object with constructor 'Object'
+    |     property 'viteConfig' -> object with constructor 'Object'
+    --- property 'test' closes the circle
+TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Object'
+    |     property 'resolvedProjects' -> object with constructor 'Array'
+    |     index 0 -> object with constructor 'Object'
+    |     property 'viteConfig' -> object with constructor 'Object'
+    --- property 'test' closes the circle
+    at JSON.stringify (<anonymous>)
+    at VitestTestRunner.init (file:///private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/node_modules/.pnpm/@stryker-mutator+vitest-runner@10.1.1_@stryker-mutator+core@10.1.1_vitest@5.0.5_vite@8.3.5_/node_modules/@stryker-mutator/vitest-runner/dist/src/vitest-test-runner.js:153:57)
+    at async ChildProcessTestRunnerWorker.init (file:///private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/node_modules/.pnpm/@stryker-mutator+core@10.1.1/node_modules/@stryker-mutator/core/dist/src/test-runner/child-process-test-runner-worker.js:16:13)
+    at async ChildProcessProxyWorker.handleCall (file:///private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/node_modules/.pnpm/@stryker-mutator+core@10.1.1/node_modules/@stryker-mutator/core/dist/src/child-proxy/child-process-proxy-worker.js:87:28)
+    at ChildProcess.<anonymous> (file:///private/var/folders/kj/x3n0rgp54_d7vq_ph_k4zmkc0000gn/T/opencode/stryker-vitest5-debug-circular-repro/node_modules/.pnpm/@stryker-mutator+core@10.1.1/node_modules/@stryker-mutator/core/dist/src/child-proxy/child-process-proxy.js:123:33)
+    at ChildProcess.emit (node:events:514:20)
+    at emit (node:internal/child_process:1004:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21) {
+  innerError: undefined
+}
+11:08:55 (73175) INFO Stryker This might be a known problem with a solution documented in our troubleshooting guide.
+11:08:55 (73175) INFO Stryker You can find it at https://stryker-mutator.io/docs/stryker-js/troubleshooting/
+11:08:55 (73175) DEBUG ChildProcessProxy Disposing of worker process 73212
+11:08:55 (73175) DEBUG ChildProcessProxy Kill 73212
+11:08:55 (73175) DEBUG ChildProcessProxy Disposing of worker process 73210
+11:08:55 (73175) DEBUG ChildProcessProxy Kill 73210
